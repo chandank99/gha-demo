@@ -1,12 +1,11 @@
-name: my-hello-world-workflow
+name: Github-Actions-Demo
 on: push
 jobs:
-  build:
+  action-demo:
     runs-on: ubuntu-latest
     steps:
-      - name: Run hello world
-        run: | 
-            echo "This is line one for hello world"
-            echo "This is line two for hello world"
-            echo "Hello, ${{ secrets.DOCKER_PASSWORD }}"
+      - name: Checkout the code
+        uses: actions/checkout@v4
+      - name: run index.html file
+        run: cat index.html
 
