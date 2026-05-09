@@ -5,8 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run hello world
-        run: echo "This is line one for hello world"
-        run: echo "This is line two for hello world"
+        run: | 
+            echo "This is line one for hello world"
+            echo "This is line two for hello world"
   test:
     runs-on: ubuntu-latest
     steps:
