@@ -8,5 +8,5 @@ jobs:
         run: | 
             echo "This is line one for hello world"
             echo "This is line two for hello world"
-            echo "Hello, ${{ vars.MY_NAME }}"
+            echo "Hello, ${{ secrets.DOCKER_PASSWORD }}"
 
